@@ -1,0 +1,63 @@
+@media screen and (min-width: 56rem ) {
+    .container-2 {
+      
+      display: flex;
+    }
+    .container-4, .container-3{
+      flex: 1;
+    }
+    .container-4{
+      padding-right: 2rem;
+    }
+  }
+
+
+.container-1{
+background-image: linear-gradient( hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+margin: 50px 50px;
+
+padding: 5%;
+}
+
+.container-2{
+    background-color: white;
+  margin-left: 12%;
+  margin-right: 12%;
+     border-radius: 20px;
+     padding: 40px;
+     
+     
+     
+}
+.image-2{
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+   
+}
+.image-1{
+   position: absolute;
+   
+
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}

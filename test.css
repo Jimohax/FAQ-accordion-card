@@ -1,0 +1,43 @@
+body{
+    background: crimson;
+}
+
+.outbox {
+ background-color: aqua;   
+}
+.outbox .inbox .label{
+    position: relative;
+    padding: 10px;
+    background: blue;
+    color: cornsilk;
+    cursor: pointer;
+
+}
+.outbox{
+    max-width: 800px;
+}
+.outbox .inbox{
+    position: relative;
+    margin: 10px 20px;
+}
+.outbox .inbox .label::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.outbox .inbox .content{
+    position: relative;
+    
+    background: cornsilk;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: 0;
+}
+.outbox .inbox.active .content{
+    height: 150px;
+    padding: 10px;
+}
